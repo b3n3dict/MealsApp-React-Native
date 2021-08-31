@@ -1,9 +1,10 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
-const MealDetailsScreen = () => {
+import { View, StyleSheet, Text, Button } from "react-native";
+const MealDetailsScreen = ({ navigation }) => {
   return (
     <View>
       <Text>MealDetailsScreen</Text>
+      <Button title="Go Back" onPress={() => navigation.popToTop()} />
     </View>
   );
 };
